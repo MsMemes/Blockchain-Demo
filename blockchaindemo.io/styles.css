@@ -451,3 +451,24 @@
 .pd-bottom-10{
 	padding-bottom: 10px;
 }
+.pd-bottom-50{
+	padding-bottom: 50px;
+}
+.carrousel-container {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	overflow: visible;
+	width: 100%;
+	margin-left: 15%;
+	height: 150px;
+	top: 900px;	
+}
+.carta-carrusel {
+	display: flex;
+	text-align: center;
+	width: 700px;
+	padding-left: 20px;
+	padding-right: 40px;
+	padding-bottom: 20px;
+}
