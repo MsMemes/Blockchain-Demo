@@ -1,0 +1,407 @@
+.mediaViewInfo {
+	--web-view-name: Web 1920 – 3;
+	--web-view-id: Web_1920___3;
+	--web-scale-on-resize: true;
+	--web-center-horizontally: true;
+	--web-center-vertically: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Web_1920___3;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#Web_1920___3 {
+	position: absolute;
+	transform: translateX(-50%) translateY(-50%);
+	left: 50%;
+	top: 50%;
+	width: 1911px;
+	height: 1075px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: Web 1920 – 3;
+	--web-view-id: Web_1920___3;
+	--web-scale-on-resize: true;
+	--web-center-horizontally: true;
+	--web-center-vertically: true;
+	--web-enable-deep-linking: true;
+}
+@keyframes  {
+
+
+}
+#Group_2 {
+	position: absolute;
+	width: 136px;
+	height: 441.26px;
+	left: 31px;
+	top: 196px;
+	overflow: visible;
+}
+#Group_1 {
+	position: absolute;
+	width: 112px;
+	height: 240.598px;
+	left: 11.986px;
+	top: 200.663px;
+	overflow: visible;
+}
+#Ellipse_1 {
+	position: absolute;
+	width: 112px;
+	height: 104px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Ellipse_1_ba {
+	position: absolute;
+	width: 104px;
+	height: 104px;
+	left: 4px;
+	top: 136.598px;
+	overflow: visible;
+}
+#Rectangle_1 {
+	position: absolute;
+	width: 127px;
+	height: 127px;
+	left: 4px;
+	top: 57px;
+	overflow: visible;
+}
+#PEERS {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+	width: 137px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	color: rgba(112,112,112,1);
+}
+#Group_3 {
+	position: absolute;
+	width: 136px;
+	height: 441.26px;
+	left: 31px;
+	top: 196px;
+	overflow: visible;
+}
+#Group_1_y {
+	position: absolute;
+	width: 112px;
+	height: 240.598px;
+	left: 11.986px;
+	top: 200.663px;
+	overflow: visible;
+}
+#Group_5 {
+	position: absolute;
+	width: 112px;
+	height: 104px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Ellipse_1_ {
+	position: absolute;
+	width: 112px;
+	height: 104px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Ellipse_1_ba {
+	position: absolute;
+	width: 104px;
+	height: 104px;
+	left: 4px;
+	top: 136.598px;
+	overflow: visible;
+}
+#Rectangle_1_ {
+	position: absolute;
+	width: 127px;
+	height: 127px;
+	left: 4px;
+	top: 57px;
+	overflow: visible;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: Web_1920___0.html;
+	cursor: pointer;
+}
+#PEERS_ {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+	width: 137px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	color: rgba(112,112,112,1);
+}
+#Mostla_Dogchain_ {
+	position: absolute;
+	left: 890px;
+	top: 32px;
+	overflow: visible;
+	width: 278px;
+	height: 126px;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(0,0,0,1);
+}
+#Mostla_Dogchain_ {
+	position: absolute;
+	left: 890px;
+	top: 32px;
+	overflow: visible;
+	width: 278px;
+	height: 126px;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(0,0,0,1);
+}
+#logo {
+	position: absolute;
+	width: 92px;
+	height: 92px;
+	left: 777px;
+	top: 32px;
+	overflow: visible;
+}
+.Rectangle_10 {
+	position: absolute;
+	overflow: visible;
+	width: 287px;
+	height: 478px;
+	left: 761px;
+	top: 192px;
+}
+.Rectangle_11 {
+	position: absolute;
+	overflow: visible;
+	width: 84px;
+	height: 39px;
+	left: 777px;
+	top: 615px;
+}
+.Rectangle_12 {
+	position: absolute;
+	overflow: visible;
+	width: 287px;
+	height: 40px;
+	left: 761px;
+	top: 192px;
+}
+#perro {
+	position: absolute;
+	left: 823px;
+	top: 197px;
+	overflow: visible;
+	width: 52px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(22,22,226,1);
+}
+#adoptar {
+	position: absolute;
+	left: 783px;
+	top: 627px;
+	overflow: visible;
+	width: 74px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(22,22,226,1);
+}
+#datos {
+	position: absolute;
+	left: 777px;
+	top: 535px;
+	overflow: visible;
+	width: 54px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(22,22,226,1);
+}
+#Rectangle_13 {
+	position: absolute;
+	width: 240px;
+	height: 257px;
+	left: 785px;
+	top: 251px;
+	overflow: visible;
+}
+.Rectangle_14 {
+	position: absolute;
+	overflow: visible;
+	width: 772px;
+	height: 302px;
+	left: 570px;
+	top: 707px;
+}
+.Rectangle_15 {
+	position: absolute;
+	overflow: visible;
+	width: 710px;
+	height: 51px;
+	left: 601px;
+	top: 752px;
+}
+.Rectangle_16 {
+	position: absolute;
+	overflow: visible;
+	width: 110px;
+	height: 51px;
+	left: 601px;
+	top: 752px;
+}
+#Data {
+	position: absolute;
+	left: 635px;
+	top: 768px;
+	overflow: visible;
+	width: 43px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(0,0,0,1);
+}
+#Previous_Hash {
+	position: absolute;
+	left: 601px;
+	top: 833px;
+	overflow: visible;
+	width: 131px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(0,0,0,1);
+}
+#Hash {
+	position: absolute;
+	left: 601px;
+	top: 881px;
+	overflow: visible;
+	width: 48px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(0,0,0,1);
+}
+#ID0 {
+	position: absolute;
+	left: 754px;
+	top: 833px;
+	overflow: visible;
+	width: 12px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(0,163,50,1);
+}
+.Rectangle_17 {
+	position: absolute;
+	overflow: visible;
+	width: 633px;
+	height: 41px;
+	left: 666px;
+	top: 871px;
+}
+#GENESIS_BLOCK {
+	position: absolute;
+	left: 601px;
+	top: 946px;
+	overflow: visible;
+	width: 244px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	color: rgba(60,60,60,1);
+}
+#ADAHGFHSGDF {
+	position: absolute;
+	left: 683px;
+	top: 883px;
+	overflow: visible;
+	width: 156px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(5,119,58,1);
+	letter-spacing: 0.1px;
+}
+.Rectangle_18 {
+	position: absolute;
+	overflow: visible;
+	width: 79px;
+	height: 30px;
+	left: 1210px;
+	top: 946px;
+}
+#ID604 {
+	position: absolute;
+	left: 1233px;
+	top: 951px;
+	overflow: visible;
+	width: 35px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 0.1px;
+}
