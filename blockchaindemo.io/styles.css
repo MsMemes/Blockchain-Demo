@@ -424,7 +424,7 @@
 	position: absolute;
 	overflow: visible;
 	width: 70%;
-	margin-left: 15%;
+	margin-left: 17%;
 	height: 478px;
 	top: 192px;
 }
@@ -454,6 +454,9 @@
 .pd-bottom-50{
 	padding-bottom: 50px;
 }
+.pd-bottom-30{
+	padding-bottom: 30px;
+}
 .carrousel-container {
 	display: flex;
 	flex-direction: row;
@@ -466,9 +469,14 @@
 }
 .carta-carrusel {
 	display: flex;
-	text-align: center;
-	width: 700px;
+	text-align: left;
+	width: 750px;
 	padding-left: 20px;
 	padding-right: 40px;
-	padding-bottom: 20px;
+	padding-bottom: 0px;
+	margin-top: -170px;
+}
+.green-text{
+	color: green;
+	background-color: greenyellow;
 }
