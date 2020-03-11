@@ -495,7 +495,6 @@
 	background-color: blueviolet;
 }
 
-<<<<<<< Updated upstream
 
 
  /* The Modal (background) */
@@ -561,8 +560,8 @@
 }
 
 #previous:hover {
-	background-color: lightgray;
-	color: black;
+	cursor: pointer;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 #next {
@@ -575,10 +574,10 @@
 	margin-left: 20px;
 	font-size: 70px;
 	background-color: black;
-	color: white;	
+	color: white;
 }
 
 #next:hover {
-	background-color: lightgray;
-	color: black;
+	cursor: pointer;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
