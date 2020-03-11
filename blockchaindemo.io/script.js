@@ -10,6 +10,7 @@
 if (window.console==null) { window["console"] = { log : function() {} } }; // some browsers do not set console
 
 var Application = function() {
+	
 	// event constants
 	this.NAVIGATION_CHANGE = "viewChange";
 	this.VIEW_NOT_FOUND = "viewNotFound";
