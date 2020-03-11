@@ -8,12 +8,11 @@ app.set('port', 8080);
 
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
-app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.static(path.join(__dirname, 'public/images/')));
+app.use(express.static(path.join(__dirname, 'blockchaindemo.io')));
 
 // Display html
 app.get('/', (req, res) => {
-    res.render(path.join(__dirname,'/views/main.html' ));
+    res.render(path.join(__dirname,'/blockchaindemo.io/main.html' ));
 })
 
 // Server is listenning

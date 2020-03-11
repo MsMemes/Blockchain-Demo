@@ -5,9 +5,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>dogchain</title>
-<link rel="stylesheet" type="text/css" href="/css/styles.css"/>
+<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="styles.css"/>
 <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Mono&display=swap" rel="stylesheet">
-<script id="applicationScript" type="text/javascript" src="/js/script.js"></script>
+<script id="applicationScript" type="text/javascript" src="script.js"></script>
+<script id="backend" type="text/javascript" src="back.js"></script>
 </head>
 <body>
 <div id="Web_1920___3">
@@ -93,7 +94,7 @@
 				<div class="container">
 					<h4 style="font-family: Montserrat;"class="pd-bottom-30"><b>Bloque pasado</b></h4>
 					<h4 style="font-family: Montserrat;"class="pd-bottom-30"><b>DATA </b>
-						<p class="SmartContract-text"onclick="alert('Se despliega Smart contract')">Smart Contract</p></h4>  
+						<p class="SmartContract-text"onclick="document.getElementById('ContractW').style.display='block'">Smart Contract</p></h4>  
 					<p style="font-family: Montserrat;font-weight: bold;font-size:larger;" class="pd-bottom-10">Hash pasado
 						<p class="green-text">hasjdfghsdgsdgasdfg </p></p> 
 					
@@ -107,7 +108,7 @@
 				<div class="container">
 					<h4 style="font-family: Montserrat;"class="pd-bottom-30"><b>Bloque presente</b></h4>
 					<h4 style="font-family: Montserrat;"class="pd-bottom-30"><b>DATA</b>
-						<p class="SmartContract-text" onclick="alert('Se despliega Smart contract')">Smart Contract</p></h4>   
+						<p class="SmartContract-text" onclick="document.getElementById('ContractW').style.display='block'">Smart Contract</p></h4>   
 					<p style="font-family: Montserrat;font-weight: bold;font-size:larger;"class="pd-bottom-10">Hash presente
 							<p class="green-text">hasjdfghsdgsdgasdfg </p></p> 
 					
@@ -115,5 +116,52 @@
 			  </div>
 		</div>
 	</div>
+
+	<!-- The Contract window -->
+<div id="ContractW" class="modal">
+	<div class="modal-content">
+	  <div class="container">
+		<span onclick="document.getElementById('ContractW').style.display='none'"
+		class="close">&times;</span>
+		<p>function approve (adress _spender, unitperrito _value)<br />
+			&nbsp &nbsp	returns (bool success) {<br />
+			&nbsp &nbsp	allowance[msg.sender][_spender] = _value;<br />
+			}<br />
+			<br />
+			funcition approveAndCall (address_spender, unitperrito _value, bytes _extraData)<br />
+			 <span id="text1contract">
+				&nbsp &nbsp  returns (bool success) {<br />
+				&nbsp &nbsp	tokenRecipient spender = tokenRecipient(_spender);<br />
+				&nbsp &nbsp  if (approve (_spender, _value) ) {<br />
+				&nbsp	&nbsp &nbsp		spender.receiveApproval(msg.sender, _value, this, _extraData) ;<br />
+				&nbsp &nbsp	}<br />
+			 </span>
+				
+			
+			}<br />
+			<br />
+			<br />
+			function transferForm (address _from, addresss _to, unitperrito _value) returns (bool succes) {<br />
+			if (balanceOf[_from &lt; _value) throw;<br />
+			&nbsp &nbsp	if (balanceOf[_to] + _value &lt; balanceOf[_to]) throw;<br />
+			&nbsp &nbsp	balanceOf[_from] -= _value;<br />
+			&nbsp &nbsp	balanceOf[_to] += _value;<br />
+			&nbsp &nbsp	allowance[_from] [msg.sender] -= _value;<br />
+			&nbsp &nbsp	Transfer(_from, _to, _value);<br />
+					
+			return true;<br />
+			}</p>
+		
+	  </div>
+	</div>
+  </div>
+	<div class="botones">
+			<div class="previous">
+				<button id="previous" onclick="alert('Cambia al bloque anterior')">&#8249;</button>
+			</div>
+			<div class="next">
+				<button id="next" onclick="alert('Cambia al bloque siguiente')">&#8250;</button>
+			</div>
+		</div>
 </body>
 </html>
