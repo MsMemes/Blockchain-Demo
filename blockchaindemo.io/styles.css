@@ -444,6 +444,7 @@
 	text-decoration: none;
 	display: inline-block;
 	font-size: 16px;
+	cursor: pointer;
   }
 .pd-top-10{
 	padding-top: 10px;
@@ -488,4 +489,5 @@
 	font-family: 'Roboto','Courier New', Courier, monospace;
 	font-weight: bold;
 	font-size: 20px;
+	cursor: pointer;
 }
