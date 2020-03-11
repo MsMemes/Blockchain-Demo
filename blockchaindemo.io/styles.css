@@ -44,7 +44,9 @@
 
 
 } */
-#Group_2 {
+
+
+#Group_3 {
 	position: absolute;
 	width: 136px;
 	height: 441.26px;
@@ -52,6 +54,7 @@
 	top: 196px;
 	overflow: visible;
 }
+
 #Group_1 {
 	position: absolute;
 	width: 112px;
@@ -98,14 +101,7 @@
 	font-size: 40px;
 	color: rgba(112,112,112,1);
 }
-#Group_3 {
-	position: absolute;
-	width: 136px;
-	height: 441.26px;
-	left: 31px;
-	top: 196px;
-	overflow: visible;
-}
+
 #Group_1_y {
 	position: absolute;
 	width: 112px;
