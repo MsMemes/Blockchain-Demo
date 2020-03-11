@@ -20,7 +20,7 @@
 			</div>
 			<img id="Ellipse_1_ba" src="Ellipse_1_ba.png" srcset="Ellipse_1_ba.png 1x, Ellipse_1_ba@2x.png 2x">
 		</div>
-		<img onclick="application.goToTargetView(event)" id="Rectangle_1_" src="Rectangle_1_.png" srcset="Rectangle_1_.png 1x, Rectangle_1_@2x.png 2x">
+		<img onclick="addimage();" id="Rectangle_1_" src="Rectangle_1_.png" srcset="Rectangle_1_.png 1x, Rectangle_1_@2x.png 2x">
 		<div id="PEERS_">
 			<span>PEERS</span>
 		</div>
@@ -156,5 +156,17 @@
 				<button id="next" onclick="alert('Cambia al bloque siguiente')">&#8250;</button>
 			</div>
 		</div>
+
+		<script type="text/javascript">
+			function addimage() { 
+			  var img = document.createElement("img");
+			  img.src = "perfil.png"; 
+			  //optionally set a css class on the image
+			  var class_name = "perfil3";
+			  img.setAttribute("class", class_name);
+	
+			  document.body.appendChild(img);
+			}
+	</script>
 </body>
 </html>

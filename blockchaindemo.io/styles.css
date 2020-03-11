@@ -134,6 +134,15 @@
 	top: 136.598px;
 	overflow: visible;
 }
+.perfil3{
+	
+	position: absolute;
+	width: 45px;
+	height: 45px;
+	left: 20px;
+	top: 405px;
+}
+
 #Rectangle_1_ {
 	position: absolute;
 	width: 127px;
