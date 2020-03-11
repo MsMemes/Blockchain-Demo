@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>dogchain</title>
 <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="styles.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Mono&display=swap" rel="stylesheet">
 <script id="applicationScript" type="text/javascript" src="script.js"></script>
 <script id="backend" type="text/javascript" src="back.js"></script>
@@ -115,6 +116,7 @@
 				</div>
 			  </div>
 		</div>
+		<i id="chain" class="fa fa-chain fa-flip-horizontal" style="font-size:63px;"></i>
 	</div>
 
 	<!-- The Contract window -->
@@ -157,10 +159,10 @@
   </div>
 	<div class="botones">
 			<div class="previous">
-				<button id="previous" onclick="alert('Cambia al bloque anterior')">&#8249;</button>
+				<button id="previous" onclick="alert('Cambia al bloque anterior')"><i class="fa fa-angle-double-left" style="font-size:36px"></i></button>
 			</div>
 			<div class="next">
-				<button id="next" onclick="alert('Cambia al bloque siguiente')">&#8250;</button>
+				<button id="next" onclick="alert('Cambia al bloque siguiente')"><i class="fa fa-angle-double-right" style="font-size:36px" ></i></button>
 			</div>
 		</div>
 </body>
