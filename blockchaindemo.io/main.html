@@ -13,16 +13,7 @@
 </head>
 <body>
 <div id="Web_1920___3">
-	<div id="Group_2">
-		<div id="Group_1">
-			<img id="Ellipse_1" src="Ellipse_1.png" srcset="Ellipse_1.png 1x, Ellipse_1@2x.png 2x">
-			<img id="Ellipse_1_ba" src="Ellipse_1_ba.png" srcset="Ellipse_1_ba.png 1x, Ellipse_1_ba@2x.png 2x">
-		</div>
-		<img id="Rectangle_1" src="Rectangle_1.png" srcset="Rectangle_1.png 1x, Rectangle_1@2x.png 2x">
-		<div id="PEERS">
-			<span>PEERS</span>
-		</div>
-	</div>
+	
 	<div id="Group_3">
 		<div id="Group_1_y">
 			<div id="Group_5">
@@ -30,11 +21,13 @@
 			</div>
 			<img id="Ellipse_1_ba" src="Ellipse_1_ba.png" srcset="Ellipse_1_ba.png 1x, Ellipse_1_ba@2x.png 2x">
 		</div>
-		<img onclick="application.goToTargetView(event)" id="Rectangle_1_" src="Rectangle_1_.png" srcset="Rectangle_1_.png 1x, Rectangle_1_@2x.png 2x">
+		<img onclick="addimage();" id="Rectangle_1_" src="Rectangle_1_.png" srcset="Rectangle_1_.png 1x, Rectangle_1_@2x.png 2x">
 		<div id="PEERS_">
 			<span>PEERS</span>
 		</div>
 	</div>
+
+	
 	<div id="Mostla_Dogchain_">
 		<span style="font-family: Montserrat;">Mostla</span><br><span style="font-family:Roboto Mono;font-style:normal;font-weight:normal;font-size:60px;">Dogchain</span>
 	</div>
@@ -44,7 +37,7 @@
 		<!-- Carta individual de un perro -->
 		<div class="carta"> 
 			<div class="card">
-				<img src="../imagenes/perrito1.jpg" alt="Avatar" style="width:100%">
+				<img src="perrito1.jpg" alt="Avatar" style="width:100%">
 				<div class="container">
 					<h4 style="font-family: Montserrat;"><b>Perrito 1</b></h4> 
 					<p style="font-family: Roboto Mono;font-weight: bold;font-size:larger;" class="pd-bottom-10">Chihuahua</p> 
@@ -55,7 +48,7 @@
 		<!-- Carta individual de un perro -->
 		<div class="carta"> 
 			<div class="card">
-				<img src="../imagenes/perrito2.jpg" alt="Avatar" style="width:100%">
+				<img src="perrito2.jpg" alt="Avatar" style="width:100%">
 				<div class="container">
 				  <h4 style="font-family: Montserrat;"><b>Perrito 2</b></h4> 
 				  <p style="font-family: Roboto Mono;font-weight: bold;font-size:larger;"class="pd-bottom-10">Pug</p>
@@ -66,7 +59,7 @@
 		<!-- Carta individual de un perro -->
 		<div class="carta"> 
 			<div class="card">
-				<img src="../imagenes/perrito3.jpg" alt="Avatar" style="width:100% ; height:60%">
+				<img src="perrito3.jpg" alt="Avatar" style="width:100% ; height:60%">
 				<div class="container">
 					<h4 style="font-family: Montserrat;"><b>Perrito 3</b></h4> 
 					<p style="font-family: Roboto Mono;font-weight: bold;font-size:larger;"class="pd-bottom-10">Chihuahua</p>
@@ -77,7 +70,7 @@
 		<!-- Carta individual de un perro aber-->
 		<div class="carta"> 
 			<div class="card">
-				<img src="../imagenes/perrito4.jpg" alt="Avatar" style="width:100%; height:60%">
+				<img src="perrito4.jpg" alt="Avatar" style="width:100%; height:60%">
 				<div class="container">
 					<h4 style="font-family: Montserrat;"><b>Perrito 4</b></h4> 
 					<p style="font-family: Roboto Mono;font-weight: bold;font-size:larger;"class="pd-bottom-10">Pug</p> 
@@ -165,5 +158,17 @@
 				<button id="next" onclick="alert('Cambia al bloque siguiente')"><i class="fa fa-angle-double-right" style="font-size:36px" ></i></button>
 			</div>
 		</div>
+
+		<script type="text/javascript">
+			function addimage() { 
+			  var img = document.createElement("img");
+			  img.src = "perfil.png"; 
+			  //optionally set a css class on the image
+			  var class_name = "perfil3";
+			  img.setAttribute("class", class_name);
+	
+			  document.body.appendChild(img);
+			}
+	</script>
 </body>
 </html>
