@@ -479,4 +479,13 @@
 .green-text{
 	color: green;
 	background-color: greenyellow;
+	font-family: 'Roboto','Courier New', Courier, monospace;
+	font-weight: bold;
+	font-size: 20px;
+}
+.SmartContract-text{
+	color:blue;
+	font-family: 'Roboto','Courier New', Courier, monospace;
+	font-weight: bold;
+	font-size: 20px;
 }
