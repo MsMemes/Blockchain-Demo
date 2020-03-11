@@ -1,0 +1,25 @@
+{
+  "name": "blockchain-demo",
+  "version": "1.0.0",
+  "description": "Demo de Blockchain",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MsMemes/Blockchain-Demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MsMemes/Blockchain-Demo/issues"
+  },
+  "homepage": "https://github.com/MsMemes/Blockchain-Demo#readme",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2",
+    "path": "^0.12.7"
+  }
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>dogchain</title>
+<link rel="stylesheet" type="text/css" href="/css/styles.css"/>
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Mono&display=swap" rel="stylesheet">
+<script id="applicationScript" type="text/javascript" src="/js/script.js"></script>
+</head>
+<body>
+<div id="Web_1920___3">
+	<div id="Group_2">
+		<div id="Group_1">
+			<img id="Ellipse_1" src="Ellipse_1.png" srcset="Ellipse_1.png 1x, Ellipse_1@2x.png 2x">
+			<img id="Ellipse_1_ba" src="Ellipse_1_ba.png" srcset="Ellipse_1_ba.png 1x, Ellipse_1_ba@2x.png 2x">
+		</div>
+		<img id="Rectangle_1" src="Rectangle_1.png" srcset="Rectangle_1.png 1x, Rectangle_1@2x.png 2x">
+		<div id="PEERS">
+			<span>PEERS</span>
+		</div>
+	</div>
+	<div id="Group_3">
+		<div id="Group_1_y">
+			<div id="Group_5">
+				<img id="Ellipse_1_" src="Ellipse_1_.png" srcset="Ellipse_1_.png 1x, Ellipse_1_@2x.png 2x">
+			</div>
+			<img id="Ellipse_1_ba" src="Ellipse_1_ba.png" srcset="Ellipse_1_ba.png 1x, Ellipse_1_ba@2x.png 2x">
+		</div>
+		<img onclick="application.goToTargetView(event)" id="Rectangle_1_" src="Rectangle_1_.png" srcset="Rectangle_1_.png 1x, Rectangle_1_@2x.png 2x">
+		<div id="PEERS_">
+			<span>PEERS</span>
+		</div>
+	</div>
+	<div id="Mostla_Dogchain_">
+		<span style="font-family: Montserrat;">Mostla</span><br><span style="font-family:Roboto Mono;font-style:normal;font-weight:normal;font-size:60px;">Dogchain</span>
+	</div>
+	<img id="logo" src="logo.png" srcset="logo.png 1x, logo@2x.png 2x">
+<!-- 	Div donde estan las cartas de los perros-->	
+	<div class="main-container">
+		<!-- Carta individual de un perro -->
+		<div class="carta"> 
+			<div class="card">
+				<img src="perrito1.jpg" alt="Avatar" style="width:100%">
+				<div class="container">
+					<h4 style="font-family: Montserrat;"><b>Perrito 1</b></h4> 
+					<p style="font-family: Roboto Mono;font-weight: bold;font-size:larger;" class="pd-bottom-10">Chihuahua</p> 
+					<button id="adopt-button"class="button" onclick="alert('Adoptado!')">Adoptar</button>
+				</div>
+			  </div>
+		</div>
+		<!-- Carta individual de un perro -->
+		<div class="carta"> 
+			<div class="card">
+				<img src="perrito2.jpg" alt="Avatar" style="width:100%">
+				<div class="container">
+				  <h4 style="font-family: Montserrat;"><b>Perrito 2</b></h4> 
+				  <p style="font-family: Roboto Mono;font-weight: bold;font-size:larger;"class="pd-bottom-10">Pug</p>
+				  <button class="button" onclick="alert('Adoptado!')">Adoptar</button> 
+				</div>
+			  </div>
+		</div>
+		<!-- Carta individual de un perro -->
+		<div class="carta"> 
+			<div class="card">
+				<img src="perrito3.jpg" alt="Avatar" style="width:100% ; height:60%">
+				<div class="container">
+					<h4 style="font-family: Montserrat;"><b>Perrito 3</b></h4> 
+					<p style="font-family: Roboto Mono;font-weight: bold;font-size:larger;"class="pd-bottom-10">Chihuahua</p>
+					<button class="button" onclick="alert('Adoptado!')">Adoptar</button> 
+				</div>
+			  </div>
+		</div>
+		<!-- Carta individual de un perro aber-->
+		<div class="carta"> 
+			<div class="card">
+				<img src="perrito4.jpg" alt="Avatar" style="width:100%; height:60%">
+				<div class="container">
+					<h4 style="font-family: Montserrat;"><b>Perrito 4</b></h4> 
+					<p style="font-family: Roboto Mono;font-weight: bold;font-size:larger;"class="pd-bottom-10">Pug</p> 
+					<button class="button" onclick="alert('Adoptado!')">Adoptar</button>
+				</div>
+			  </div>
+		</div>
+
+	</div>
+	<!-- carrusel -->
+	<div class="carrousel-container">
+		<!-- bloque anterior -->
+		<div class="carta-carrusel"> 
+			<div class="card">
+				<div class="container">
+					<h4 style="font-family: Montserrat;"class="pd-bottom-30"><b>Bloque pasado</b></h4>
+					<h4 style="font-family: Montserrat;"class="pd-bottom-30"><b>DATA </b>
+						<p class="SmartContract-text"onclick="alert('Se despliega Smart contract')">Smart Contract</p></h4>  
+					<p style="font-family: Montserrat;font-weight: bold;font-size:larger;" class="pd-bottom-10">Hash pasado
+						<p class="green-text">hasjdfghsdgsdgasdfg </p></p> 
+					
+				</div>
+			  </div>
+		</div>
+		<!-- bloque presente -->
+		<div id="bloque-presente" class="carta-carrusel"> 
+			<div class="card">
+				
+				<div class="container">
+					<h4 style="font-family: Montserrat;"class="pd-bottom-30"><b>Bloque presente</b></h4>
+					<h4 style="font-family: Montserrat;"class="pd-bottom-30"><b>DATA</b>
+						<p class="SmartContract-text" onclick="alert('Se despliega Smart contract')">Smart Contract</p></h4>   
+					<p style="font-family: Montserrat;font-weight: bold;font-size:larger;"class="pd-bottom-10">Hash presente
+							<p class="green-text">hasjdfghsdgsdgasdfg </p></p> 
+					
+				</div>
+			  </div>
+		</div>
+	</div>
+</body>
+</html>
