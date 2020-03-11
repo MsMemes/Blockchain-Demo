@@ -8,6 +8,7 @@
 <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="styles.css"/>
 <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Mono&display=swap" rel="stylesheet">
 <script id="applicationScript" type="text/javascript" src="script.js"></script>
+<script id="backend" type="text/javascript" src="back.js"></script>
 </head>
 <body>
 <div id="Web_1920___3">
@@ -46,7 +47,7 @@
 				<div class="container">
 					<h4 style="font-family: Montserrat;"><b>Perrito 1</b></h4> 
 					<p style="font-family: Roboto Mono;font-weight: bold;font-size:larger;" class="pd-bottom-10">Chihuahua</p> 
-					<button class="button" onclick="alert('Adoptado!')">Adoptar</button>
+					<button id="adopt-button"class="button" onclick="alert('Adoptado!')">Adoptar</button>
 				</div>
 			  </div>
 		</div>
@@ -101,7 +102,7 @@
 			  </div>
 		</div>
 		<!-- bloque presente -->
-		<div class="carta-carrusel"> 
+		<div id="bloque-presente" class="carta-carrusel"> 
 			<div class="card">
 				
 				<div class="container">
