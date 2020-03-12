@@ -8,8 +8,6 @@
 <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="styles.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Mono&display=swap" rel="stylesheet">
-<script id="applicationScript" type="text/javascript" src="script.js"></script>
-<script id="backend" type="text/javascript" src="back.js"></script>
 </head>
 <body>
 <div id="Web_1920___3">
@@ -86,11 +84,12 @@
 		<div class="carta-carrusel"> 
 			<div class="card">
 				<div class="container">
-					<h4 style="font-family: Montserrat;"class="pd-bottom-30"><b>Bloque pasado</b></h4>
-					<h4 style="font-family: Montserrat;"class="pd-bottom-30"><b>DATA </b>
+					<h4 style="font-family: Montserrat;"class="pd-bottom-30" id="prevBName"><b>Bloque pasado</b></h4>
+					<h4 style="font-family: Montserrat;"class="pd-bottom-30" id="prevBData"><b>DATA </b>
 						<p class="SmartContract-text"onclick="document.getElementById('ContractW').style.display='block'">Smart Contract</p></h4>  
 					<p style="font-family: Montserrat;font-weight: bold;font-size:larger;" class="pd-bottom-10">Hash pasado
-						<p class="green-text">hasjdfghsdgsdgasdfg </p></p> 
+						<p class="green-text" id="prevBPHash">hasjdfghsdgsdgasdfg</p>
+						<p id="prevBHash">hasjdfghsdgsdgasdfg</p> 
 					
 				</div>
 			  </div>
@@ -100,12 +99,12 @@
 			<div class="card">
 				
 				<div class="container">
-					<h4 style="font-family: Montserrat;"class="pd-bottom-30"><b>Bloque presente</b></h4>
-					<h4 style="font-family: Montserrat;"class="pd-bottom-30"><b>DATA</b>
+					<h4 style="font-family: Montserrat;"class="pd-bottom-30" id="BName"><b>Bloque presente</b></h4>
+					<h4 style="font-family: Montserrat;"class="pd-bottom-30" id="BData"><b>DATA</b>
 						<p class="SmartContract-text" onclick="document.getElementById('ContractW').style.display='block'">Smart Contract</p></h4>   
 					<p style="font-family: Montserrat;font-weight: bold;font-size:larger;"class="pd-bottom-10">Hash presente
-							<p class="green-text">hasjdfghsdgsdgasdfg </p></p> 
-					
+							<p class="green-text" id="prevBHash">hasjdfghsdgsdgasdfg</p> 
+							<p id="hash"></p>
 				</div>
 			  </div>
 		</div>
@@ -150,6 +149,8 @@
 	  </div>
 	</div>
   </div>
+
+  <!--
 	<div class="botones">
 			<div class="previous">
 				<button id="previous" onclick="alert('Cambia al bloque anterior')"><i class="fa fa-angle-double-left" style="font-size:36px"></i></button>
@@ -158,7 +159,7 @@
 				<button id="next" onclick="alert('Cambia al bloque siguiente')"><i class="fa fa-angle-double-right" style="font-size:36px" ></i></button>
 			</div>
 		</div>
-
+	-->
 		<script type="text/javascript">
 			function addimage() { 
 			  var img = document.createElement("img");
@@ -170,5 +171,7 @@
 			  document.body.appendChild(img);
 			}
 	</script>
+	<script id="applicationScript" type="text/javascript" src="script.js"></script>
+	<script id="backend" type="text/javascript" src="back.js"></script>
 </body>
 </html>
