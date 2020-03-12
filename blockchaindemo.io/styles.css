@@ -44,7 +44,9 @@
 
 
 } */
-#Group_2 {
+
+
+#Group_3 {
 	position: absolute;
 	width: 136px;
 	height: 441.26px;
@@ -52,6 +54,7 @@
 	top: 196px;
 	overflow: visible;
 }
+
 #Group_1 {
 	position: absolute;
 	width: 112px;
@@ -98,14 +101,7 @@
 	font-size: 40px;
 	color: rgba(112,112,112,1);
 }
-#Group_3 {
-	position: absolute;
-	width: 136px;
-	height: 441.26px;
-	left: 31px;
-	top: 196px;
-	overflow: visible;
-}
+
 #Group_1_y {
 	position: absolute;
 	width: 112px;
@@ -138,6 +134,15 @@
 	top: 136.598px;
 	overflow: visible;
 }
+.perfil3{
+	
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	left: 90px;
+	top: 430px;
+}
+
 #Rectangle_1_ {
 	position: absolute;
 	width: 127px;
@@ -547,14 +552,13 @@
   }
 
 #previous {
-	width: 100px;
-	height: 100px;
+	width: 60px;
 	position: absolute;
-	top: 840px;
+	top: 860px;
+	padding: 10px;
 	margin-right: 20px;
-	margin-left: 190px;
+	margin-left: 230px;
 	border-radius: 50%;
-	font-size: 70px;
 	background-color: black;
 	color: white;
 }
@@ -565,14 +569,14 @@
 }
 
 #next {
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
+	width: 60px;
 	position: absolute;
-	top: 840px;
-	right: 50px;
+	padding: 10px;
+	top: 860px;
+	right: 80px;
+	border-radius: 50%;
 	margin-left: 20px;
-	font-size: 70px;
+	font-size: 25px;
 	background-color: black;
 	color: white;
 }
@@ -580,4 +584,11 @@
 #next:hover {
 	cursor: pointer;
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+#chain {
+	position: absolute;
+	left: 710px;
+	top: -40px;
 }
