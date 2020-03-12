@@ -23,7 +23,8 @@
 			<img id="Ellipse_1_ba" src="Ellipse_1_ba.png" srcset="Ellipse_1_ba.png 1x, Ellipse_1_ba@2x.png 2x">
 		</div>
 		<!-- botón de añadir peer -->
-		<img onclick="addimage();" id="Rectangle_1_" src="Rectangle_1_.png" srcset="Rectangle_1_.png 1x, Rectangle_1_@2x.png 2x">
+		<img onclick="addimage()" id="Rectangle_1_" src="Rectangle_1_.png" srcset="Rectangle_1_.png 1x, Rectangle_1_@2x.png 2x">
+
 		<!-- texto de peers -->
 		<div id="PEERS_">
 			<span>PEERS</span>
@@ -162,15 +163,6 @@
 			</div>
 		</div>
 
-		<script type="text/javascript">
-			function addimage() { 
-			  var img = document.createElement("img");
-			  img.src = "perfil.png"; 
-			  //optionally set a css class on the image
-			  var class_name = "perfil_3";
-			  img.setAttribute("class", class_name);
-			   document.getElementById("Group_1_y").appendChild(img);
-			}
-	</script>
+
 </body>
 </html>
