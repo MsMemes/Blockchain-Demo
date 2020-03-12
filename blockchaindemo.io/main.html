@@ -13,21 +13,24 @@
 </head>
 <body>
 <div id="Web_1920___3">
-	
+	<!-- seccion de peers -->
 	<div id="Group_3">
+		<!-- cara de los peers -->
 		<div id="Group_1_y">
 			<div id="Group_5">
 				<img id="Ellipse_1_" src="Ellipse_1_.png" srcset="Ellipse_1_.png 1x, Ellipse_1_@2x.png 2x">
 			</div>
 			<img id="Ellipse_1_ba" src="Ellipse_1_ba.png" srcset="Ellipse_1_ba.png 1x, Ellipse_1_ba@2x.png 2x">
 		</div>
+		<!-- botón de añadir peer -->
 		<img onclick="addimage();" id="Rectangle_1_" src="Rectangle_1_.png" srcset="Rectangle_1_.png 1x, Rectangle_1_@2x.png 2x">
+		<!-- texto de peers -->
 		<div id="PEERS_">
 			<span>PEERS</span>
 		</div>
 	</div>
 
-	
+	<!-- titulo y logo -->
 	<div id="Mostla_Dogchain_">
 		<span style="font-family: Montserrat;">Mostla</span><br><span style="font-family:Roboto Mono;font-style:normal;font-weight:normal;font-size:60px;">Dogchain</span>
 	</div>
@@ -47,7 +50,7 @@
 		</div>
 		<!-- Carta individual de un perro -->
 		<div class="carta"> 
-			<div class="card">
+			<div class="card"> 
 				<img src="perrito2.jpg" alt="Avatar" style="width:100%">
 				<div class="container">
 				  <h4 style="font-family: Montserrat;"><b>Perrito 2</b></h4> 
@@ -166,8 +169,7 @@
 			  //optionally set a css class on the image
 			  var class_name = "perfil3";
 			  img.setAttribute("class", class_name);
-	
-			  document.body.appendChild(img);
+			   document.getElementById("Group_5").appendChild(img);
 			}
 	</script>
 </body>
