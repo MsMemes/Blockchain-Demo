@@ -2418,7 +2418,4 @@ var Application = function() {
 	window.document.addEventListener("DOMContentLoaded", self.onloadHandler);
 }
 
-
-
-
 window.application = new Application();
