@@ -49,7 +49,7 @@
 #Group_3 {
 	position: absolute;
 	width: 136px;
-	height: 441.26px;
+	height: 800px;
 	left: 31px;
 	top: 196px;
 	overflow: visible;
@@ -134,15 +134,23 @@
 	top: 136.598px;
 	overflow: visible;
 }
-.perfil3{
+.perfil_3{
 	
 	position: absolute;
-	width: 75px;
-	height: 75px;
-	left: 90px;
-	top: 430px;
+	width: 110px;
+	height: 110px;
+	left: 3px;
+	top: 250px;
 }
 
+.perfil_4{
+	position: absolute;
+	width: 110px;
+	height: 140px;
+	left: 3px;
+	top: 360px;
+	overflow: visible;
+}
 #Rectangle_1_ {
 	position: absolute;
 	width: 127px;
