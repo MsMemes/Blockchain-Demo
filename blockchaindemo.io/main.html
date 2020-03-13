@@ -15,16 +15,16 @@
 	<div id="Group_3">
 		<div id="Group_1_y">
 			<div id="Group_5">
-				<img id="Ellipse_1_" src="Ellipse_1_.png" srcset="Ellipse_1_.png 1x, Ellipse_1_@2x.png 2x">
+				<img onclick = "rolando();" id="Ellipse_1_" src="Ellipse_1_.png" srcset="Ellipse_1_.png 1x, Ellipse_1_@2x.png 2x">
 			</div>
-			<img id="Ellipse_1_ba" src="Ellipse_1_ba.png" srcset="Ellipse_1_ba.png 1x, Ellipse_1_ba@2x.png 2x">
+			<img onclick = "sergio();" id="Ellipse_1_ba" src="Ellipse_1_ba.png" srcset="Ellipse_1_ba.png 1x, Ellipse_1_ba@2x.png 2x">
 		</div>
 		<img onclick="addimage();" id="Rectangle_1_" src="Rectangle_1_.png" srcset="Rectangle_1_.png 1x, Rectangle_1_@2x.png 2x">
 		<div id="PEERS_">
 			<span>PEERS</span>
 		</div>
 	</div>
-
+	
 	
 	<div id="Mostla_Dogchain_">
 		<span style="font-family: Montserrat;">Mostla</span><br><span style="font-family:Roboto Mono;font-style:normal;font-weight:normal;font-size:60px;">Dogchain</span>
@@ -111,6 +111,15 @@
 		<i id="chain" class="fa fa-chain fa-flip-horizontal" style="font-size:63px;"></i>
 	</div>
 
+	<div class = "NombreUsuario">
+		<div class = "Usuario"><p>Usuario:</p></div>
+		<div class = "Nombre">
+			<p id = "namepeer">Aquí va el nombre</p>
+		</div>
+		
+
+	</div>
+
 	<!-- The Contract window -->
 <div id="ContractW" class="modal">
 	<div class="modal-content">
@@ -150,7 +159,7 @@
 	</div>
   </div>
 
-  <!--
+  
 	<div class="botones">
 			<div class="previous">
 				<button id="previous" onclick="alert('Cambia al bloque anterior')"><i class="fa fa-angle-double-left" style="font-size:36px"></i></button>
@@ -159,20 +168,7 @@
 				<button id="next" onclick="alert('Cambia al bloque siguiente')"><i class="fa fa-angle-double-right" style="font-size:36px" ></i></button>
 			</div>
 		</div>
-	-->
-	<!--
-		<script type="text/javascript">
-			function addimage() { 
-			  var img = document.createElement("img");
-			  img.src = "perfil.png"; 
-			  //optionally set a css class on the image
-			  var class_name = "perfil3";
-			  img.setAttribute("class", class_name);
 	
-			  document.body.appendChild(img);
-			}
-	</script>
-	-->
 	<script id="applicationScript" type="text/javascript" src="script.js"></script>
 	<script id="backend" type="text/javascript" src="back.js"></script>
 </body>

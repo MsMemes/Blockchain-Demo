@@ -20,7 +20,7 @@ img.src = "perfil4.png";
 var class_name = "perfil_4";
 img.setAttribute("class", class_name);
 document.getElementById("Group_1_y").appendChild(img);
-
+a = true;
 }
 a = false;
 }
@@ -74,3 +74,19 @@ document.getElementById("prevBHash").innerHTML = gBlock.hash;
 
 // Right block is hidden, to display change this attribute to "block"
 // document.getElementById("bloque-presente").style.display = "none";
+
+
+// Funciones para cambiar el nombre de usuario
+
+function rolando(){
+  document.getElementById("namepeer").innerHTML = "Rolando";
+}
+function sergio(){
+  document.getElementById("namepeer").innerHTML = "Sergio";
+}
+function sebastian(){
+  document.getElementById("namepeer").innerHTML = "Sebastián";
+}
+function julia(){
+  document.getElementById("namepeer").innerHTML = "Julia";
+}
