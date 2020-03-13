@@ -523,6 +523,7 @@
 
 
 .green-text{
+	border: 5px solid red;
 	color: green;
 	background-color: greenyellow;
 	font-family: 'Roboto','Courier New', Courier, monospace;
@@ -530,6 +531,7 @@
 	font-size: 20px;
 	border-radius: 10px;
 	padding: 10px;
+	animation: mymove 5s infinite;
 }
 
 .SmartContract-text{
