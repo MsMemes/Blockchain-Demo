@@ -1,6 +1,10 @@
 var a = true;
 var x = "s";
 
+function selectPeer()
+{
+  
+}
 
 function addimage() { 
  if ((a == true) && (x == "s")){

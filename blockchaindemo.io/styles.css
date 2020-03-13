@@ -521,17 +521,23 @@
 	margin-top: -210px;
 }
 
+@keyframes myanim {
+            20% {
+               border-color: #f4b82a;
+            }
+         }
 
 .green-text{
 	border: 5px solid red;
 	color: green;
 	background-color: greenyellow;
+	border: 5px solid #83e4e6;
+    animation: myanim 3s infinite;
 	font-family: 'Roboto','Courier New', Courier, monospace;
 	font-weight: bold;
 	font-size: 20px;
 	border-radius: 10px;
-	padding: 10px;
-	animation: mymove 5s infinite;
+	padding: 5px;
 }
 
 .SmartContract-text{
