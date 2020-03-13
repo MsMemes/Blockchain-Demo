@@ -4,24 +4,13 @@ var x = "s";
 
 function addimage() { 
  if ((a == true) && (x == "s")){
-   var img = document.createElement("img");
-   img.src = "perfil.png"; 
-   //optionally set a css class on the image
-   var class_name = "perfil_3";
-   img.setAttribute("class", class_name);
-  document.getElementById("Group_1_y").appendChild(img);
+   document.getElementById("perfil3").style.display ="block";
   x = "x";
 
  }
 
 if ((a == false) && (x == "x")){
-
-var img = document.createElement("img");
-img.src = "perfil4.png"; 
-//optionally set a css class on the image
-var class_name = "perfil_4";
-img.setAttribute("class", class_name);
-document.getElementById("Group_1_y").appendChild(img);
+  document.getElementById("perfil4").style.display ="block";
 x = "4";
 }
 a = false;
@@ -82,13 +71,29 @@ document.getElementById("prevBHash").innerHTML = gBlock.hash;
 
 function rolando(){
   document.getElementById("namepeer").innerHTML = "Rolando";
+  document.getElementById("Ellipse_1_").style.border="5px solid blue";
+  document.getElementById("Ellipse_1_ba").style.border = "0px"; 
+  document.getElementById("perfil3").style.border = "0px"; 
+  document.getElementById("perfil4").style.border = "0px"; 
 }
 function sergio(){
   document.getElementById("namepeer").innerHTML = "Sergio";
+  document.getElementById("Ellipse_1_ba").style.border="5px solid blue";
+  document.getElementById("Ellipse_1_").style.border = "0px"; 
+  document.getElementById("perfil3").style.border = "0px"; 
+  document.getElementById("perfil4").style.border = "0px"; 
 }
-function sebastian(){
-  document.getElementById("namepeer").innerHTML = "Sebastián";
+function erika(){
+  document.getElementById("namepeer").innerHTML = "Erika";
+  document.getElementById("perfil3").style.border="5px solid blue";
+  document.getElementById("Ellipse_1_ba").style.border = "0px"; 
+  document.getElementById("Ellipse_1_").style.border = "0px"; 
+  document.getElementById("perfil4").style.border = "0px"; 
 }
 function julia(){
   document.getElementById("namepeer").innerHTML = "Julia";
+  document.getElementById("perfil4").style.border = "5px solid blue"; 
+  document.getElementById("Ellipse_1_ba").style.border = "0px"; 
+  document.getElementById("perfil3").style.border = "0px"; 
+  document.getElementById("Ellipse_1_").style.border = "0px"; 
 }
