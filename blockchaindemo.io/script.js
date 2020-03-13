@@ -146,6 +146,27 @@ var Application = function() {
 		//"addEventListener" in document ? null : document.addEventListener = document.attachEvent;
 	}
 
+	let adopPerrito1 = document.querySelector('#botonAdoptar1');
+	let adopPerrito2 = document.querySelector('#botonAdoptar2');
+	let adopPerrito3 = document.querySelector('#botonAdoptar3');
+	let adopPerrito4 = document.querySelector('#botonAdoptar4');
+
+	adopPerrito1.addEventListener('click', () => {
+		adopPerrito1.style.backgroundColor = "#c1c1c1";
+		adopPerrito1.style.color = "black";
+	})
+	adopPerrito2.addEventListener('click', () => {
+		adopPerrito2.style.backgroundColor = "#c1c1c1";
+		adopPerrito2.style.color = "black";
+	})
+	adopPerrito3.addEventListener('click', () => {
+		adopPerrito3.style.backgroundColor = "#c1c1c1";
+		adopPerrito3.style.color = "black";
+	})
+	adopPerrito4.addEventListener('click', () => {
+		adopPerrito4.style.backgroundColor = "#c1c1c1";
+		adopPerrito4.style.color = "black";
+	})
 
 	///////////////////////////////////////
 	// AUTO REFRESH 
