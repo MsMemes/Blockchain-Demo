@@ -1,18 +1,21 @@
 var a = true;
+var x = "s";
 
 
 function addimage() { 
- if (a == true){
+ if ((a == true) && (x == "s")){
    var img = document.createElement("img");
    img.src = "perfil.png"; 
    //optionally set a css class on the image
    var class_name = "perfil_3";
    img.setAttribute("class", class_name);
+   img.setAttribute("")
   document.getElementById("Group_1_y").appendChild(img);
+  x = "x";
 
  }
 
-if (a == false){
+if ((a == false) && (x == "x")){
 
 var img = document.createElement("img");
 img.src = "perfil4.png"; 
@@ -20,7 +23,7 @@ img.src = "perfil4.png";
 var class_name = "perfil_4";
 img.setAttribute("class", class_name);
 document.getElementById("Group_1_y").appendChild(img);
-
+x = "4";
 }
 a = false;
 }
@@ -68,9 +71,88 @@ var tBlock = {
   hash: stringToHash("Welcome to hell")
 };
 
+var pPerro = {
+  name: 'Cientifico',
+  adoptedBy: 'None'
+};
+
+var sPerro = {
+  name: 'Higienico',
+  adoptedBy: 'None'
+};
+
+var tPerro = {
+  name: 'Otaku',
+  adoptedBy: 'None'
+};
+
+var cPerro = {
+  name: 'Huichol',
+  adoptedBy: 'None'
+};
+
 document.getElementById("prevBName").innerHTML = gBlock.name;
 document.getElementById("prevBPHash").innerHTML = gBlock.prevHash;
 document.getElementById("prevBHash").innerHTML = gBlock.hash;
 
 // Right block is hidden, to display change this attribute to "block"
 // document.getElementById("bloque-presente").style.display = "none";
+
+function verifyDog(dName)
+{
+  if (dName == pPerro.name)
+  {
+    return pPerro;
+  }
+  else if (dName == sPerro.name)
+  {
+    return sPerro;
+  }
+  else if (dName == tPerro.name)
+  {
+    return tPerro;
+  }
+  else if (dName == cPerro.name)
+  {
+    return cPerro;
+  }
+}
+
+function adoptDog()
+{
+  let container = document.querySelectorAll('.container');
+
+  for (let i = 0; i < container.length; i++)
+  {
+    container[i].addEventListener('click', (e) => {
+      
+      if (e.target.className == "button")
+      {
+        verifyDog(e.target.name).adoptedBy = ODAGNAEONGJERKGNJFDNGDJ;
+      }
+    });
+  }
+  
+}
+
+function init()
+{
+  adoptDog();
+}
+
+init();
+
+// Funciones para cambiar el nombre de usuario
+
+function rolando(){
+  document.getElementById("namepeer").innerHTML = "Rolando";
+}
+function sergio(){
+  document.getElementById("namepeer").innerHTML = "Sergio";
+}
+function sebastian(){
+  document.getElementById("namepeer").innerHTML = "Sebastián";
+}
+function julia(){
+  document.getElementById("namepeer").innerHTML = "Julia";
+}

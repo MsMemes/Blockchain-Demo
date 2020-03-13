@@ -163,6 +163,36 @@
 	--web-action-target: Web_1920___0.html;
 	cursor: pointer;
 }
+
+.Usuario{
+	font-size: 20px;
+	color: #A30100;
+	font-weight: bold;
+	left: 0px;
+	top: 100%;
+	font-family:'Roboto Mono', monospace;
+}
+
+.Nombre{
+	font-size: 30px;
+	color: black;
+	left: 0px;
+	top: 100%;
+	font-family:'Montserrat','Roboto Mono', monospace;
+}
+
+.NombreUsuario{
+	position: absolute;
+	left: 40px;
+	top: 70px;
+	overflow: visible;
+	width: 400px;
+	height: 80px;
+	text-align: left;
+	font-family: 'Montserrat','Roboto Mono', monospace;
+	font-size: 30px;
+}
+
 #PEERS_ {
 	position: absolute;
 	left: 0px;
