@@ -1,18 +1,20 @@
 var a = true;
+var x = "s";
 
 
 function addimage() { 
- if (a == true){
+ if ((a == true) && (x == "s")){
    var img = document.createElement("img");
    img.src = "perfil.png"; 
    //optionally set a css class on the image
    var class_name = "perfil_3";
    img.setAttribute("class", class_name);
   document.getElementById("Group_1_y").appendChild(img);
+  x = "x";
 
  }
 
-if (a == false){
+if ((a == false) && (x == "x")){
 
 var img = document.createElement("img");
 img.src = "perfil4.png"; 
@@ -20,7 +22,7 @@ img.src = "perfil4.png";
 var class_name = "perfil_4";
 img.setAttribute("class", class_name);
 document.getElementById("Group_1_y").appendChild(img);
-a = true;
+x = "4";
 }
 a = false;
 }
