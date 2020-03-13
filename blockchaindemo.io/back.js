@@ -1,8 +1,9 @@
 var a = true;
+var x = "s";
 
 
 function addimage() { 
- if (a == true){
+ if ((a == true) && (x == "s")){
    var img = document.createElement("img");
    img.src = "perfil.png"; 
    //optionally set a css class on the image
@@ -10,10 +11,11 @@ function addimage() {
    img.setAttribute("class", class_name);
    img.setAttribute("")
   document.getElementById("Group_1_y").appendChild(img);
+  x = "x";
 
  }
 
-if (a == false){
+if ((a == false) && (x == "x")){
 
 var img = document.createElement("img");
 img.src = "perfil4.png"; 
@@ -21,7 +23,7 @@ img.src = "perfil4.png";
 var class_name = "perfil_4";
 img.setAttribute("class", class_name);
 document.getElementById("Group_1_y").appendChild(img);
-
+x = "4";
 }
 a = false;
 }
@@ -139,3 +141,18 @@ function init()
 }
 
 init();
+
+// Funciones para cambiar el nombre de usuario
+
+function rolando(){
+  document.getElementById("namepeer").innerHTML = "Rolando";
+}
+function sergio(){
+  document.getElementById("namepeer").innerHTML = "Sergio";
+}
+function sebastian(){
+  document.getElementById("namepeer").innerHTML = "Sebastián";
+}
+function julia(){
+  document.getElementById("namepeer").innerHTML = "Julia";
+}
