@@ -154,18 +154,22 @@ var Application = function() {
 	adopPerrito1.addEventListener('click', () => {
 		adopPerrito1.style.backgroundColor = "#c1c1c1";
 		adopPerrito1.style.color = "black";
+		adopPerrito1.firstChild.data = "Adoptado!";
 	})
 	adopPerrito2.addEventListener('click', () => {
 		adopPerrito2.style.backgroundColor = "#c1c1c1";
 		adopPerrito2.style.color = "black";
+		adopPerrito2.firstChild.data = "Adoptado!";
 	})
 	adopPerrito3.addEventListener('click', () => {
 		adopPerrito3.style.backgroundColor = "#c1c1c1";
 		adopPerrito3.style.color = "black";
+		adopPerrito3.firstChild.data = "Adoptado!";
 	})
 	adopPerrito4.addEventListener('click', () => {
 		adopPerrito4.style.backgroundColor = "#c1c1c1";
 		adopPerrito4.style.color = "black";
+		adopPerrito4.firstChild.data = "Adoptado!";
 	})
 
 	///////////////////////////////////////
