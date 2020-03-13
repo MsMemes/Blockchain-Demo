@@ -490,13 +490,24 @@
 	padding-bottom: 0px;
 	margin-top: -210px;
 }
+
+@keyframes mymove {
+  from {border-color: : red;}
+  to {border-color: : blue;}
+}
+
 .green-text{
+	border: 5px solid red;
 	color: green;
 	background-color: greenyellow;
 	font-family: 'Roboto','Courier New', Courier, monospace;
 	font-weight: bold;
 	font-size: 20px;
+	border-radius: 10px;
+	padding: 10px;
+	animation: mymove 5s infinite;
 }
+
 .SmartContract-text{
 	color:blue;
 	font-family: 'Roboto','Courier New', Courier, monospace;
