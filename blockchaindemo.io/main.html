@@ -11,9 +11,7 @@
 </head>
 <body>
 <div id="Web_1920___3">
-
-
-	<!-- Bloque de los peers -->
+	
 	<div id="Group_3">
 		<div id="Group_1_y">
 			<div id="Group_5">
@@ -39,9 +37,9 @@
 			<div class="card">
 				<img src="perrito1.jpg" alt="Avatar" style="width:100%">
 				<div class="container">
-					<h4 style="font-family: Montserrat;"><b>Chihuahua</b></h4> 
-					<p style="font-family: Roboto Mono;font-weight: bold;font-size:larger;" class="pd-bottom-10">Cientifico</p> 
-					<button id="botonAdoptar1" class="button">Adoptar</button>
+					<h4 style="font-family: Montserrat;"><b>Perrito 1</b></h4> 
+					<p style="font-family: Roboto Mono;font-weight: bold;font-size:larger;" class="pd-bottom-10">Chihuahua</p> 
+					<button id="adopt-button"class="button" onclick="alert('Adoptado!')">Adoptar</button>
 				</div>
 			  </div>
 		</div>
@@ -50,9 +48,9 @@
 			<div class="card">
 				<img src="perrito2.jpg" alt="Avatar" style="width:100% ; height:60%">
 				<div class="container">
-				  <h4 style="font-family: Montserrat;"><b>Pug</b></h4> 
-				  <p style="font-family: Roboto Mono;font-weight: bold;font-size:larger;"class="pd-bottom-10">Higienico</p>
-				  <button id="botonAdoptar2" class="button">Adoptar</button> 
+				  <h4 style="font-family: Montserrat;"><b>Perrito 2</b></h4> 
+				  <p style="font-family: Roboto Mono;font-weight: bold;font-size:larger;"class="pd-bottom-10">Pug</p>
+				  <button class="button" onclick="alert('Adoptado!')">Adoptar</button> 
 				</div>
 			  </div>
 		</div>
@@ -61,9 +59,9 @@
 			<div class="card">
 				<img src="perrito3.jpg" alt="Avatar" style="width:100% ; height:60%">
 				<div class="container">
-					<h4 style="font-family: Montserrat;"><b>Chihuahua</b></h4> 
-					<p style="font-family: Roboto Mono;font-weight: bold;font-size:larger;"class="pd-bottom-10">Otaku</p>
-					<button id="botonAdoptar3" class="button">Adoptar</button> 
+					<h4 style="font-family: Montserrat;"><b>Perrito 3</b></h4> 
+					<p style="font-family: Roboto Mono;font-weight: bold;font-size:larger;"class="pd-bottom-10">Chihuahua</p>
+					<button class="button" onclick="alert('Adoptado!')">Adoptar</button> 
 				</div>
 			  </div>
 		</div>
@@ -72,9 +70,9 @@
 			<div class="card">
 				<img src="perrito4.jpg" alt="Avatar" style="width:100%; height:60%">
 				<div class="container">
-					<h4 style="font-family: Montserrat;"><b>Pug</b></h4> 
-					<p style="font-family: Roboto Mono;font-weight: bold;font-size:larger;"class="pd-bottom-10">Huichol</p> 
-					<button id="botonAdoptar4" class="button">Adoptar</button>
+					<h4 style="font-family: Montserrat;"><b>Perrito 4</b></h4> 
+					<p style="font-family: Roboto Mono;font-weight: bold;font-size:larger;"class="pd-bottom-10">Pug</p> 
+					<button class="button" onclick="alert('Adoptado!')">Adoptar</button>
 				</div>
 			  </div>
 		</div>
@@ -86,11 +84,9 @@
 		<div class="carta-carrusel"> 
 			<div class="card">
 				<div class="container">
-					
-					<h4 style="font-family: Montserrat;"class="pd-bottom-10" id="prevBName"><b>Bloque pasado</b></h4>
-					<h4 style="font-family: Montserrat;"class="pd-bottom-10" id="prevBName"><b>Nonce: 604</b></h4>
-					<h4 style="font-family: Montserrat;"class="pd-bottom-10" id="prevBData"><b>DATA </b>
-						<p class="SmartContract-text"onclick="document.getElementById('ContractW').style.display='block'">Smart Contract</p></h4>  		
+					<h4 style="font-family: Montserrat;"class="pd-bottom-30" id="prevBName"><b>Bloque pasado</b></h4>
+					<h4 style="font-family: Montserrat;"class="pd-bottom-30" id="prevBData"><b>DATA </b>
+						<p class="SmartContract-text"onclick="document.getElementById('ContractW').style.display='block'">Smart Contract</p></h4>  
 					<p style="font-family: Montserrat;font-weight: bold;font-size:larger;" class="pd-bottom-10">Hash Genesis</p>
 						<p class="green-text" id="prevBPHash">hasjdfghsdgsdgasdfg</p>
 				</div>
@@ -112,7 +108,7 @@
 				</div>
 			  </div>
 		</div>
-		<i id="chain" class="fa fa-chain" style="font-size:63px;"></i>
+		<i id="chain" class="fa fa-chain fa-flip-horizontal" style="font-size:63px;"></i>
 	</div>
 
 	<div class = "NombreUsuario">
@@ -130,7 +126,6 @@
 	  <div class="container">
 		<span onclick="document.getElementById('ContractW').style.display='none'"
 		class="close">&times;</span>
-		<!-- Texto del samrt contract -->
 		<p>function approve (adress _spender, unitperrito _value)<br />
 			&nbsp &nbsp	returns (bool success) {<br />
 			&nbsp &nbsp	allowance[msg.sender][_spender] = _value;<br />
@@ -163,6 +158,8 @@
 	  </div>
 	</div>
   </div>
+
+  
 	<div class="botones">
 			<div class="previous">
 				<button id="previous" onclick="alert('Cambia al bloque anterior')"><i class="fa fa-angle-double-left" style="font-size:36px"></i></button>
@@ -171,6 +168,7 @@
 				<button id="next" onclick="alert('Cambia al bloque siguiente')"><i class="fa fa-angle-double-right" style="font-size:36px" ></i></button>
 			</div>
 		</div>
+	
 	<script id="applicationScript" type="text/javascript" src="script.js"></script>
 	<script id="backend" type="text/javascript" src="back.js"></script>
 </body>
