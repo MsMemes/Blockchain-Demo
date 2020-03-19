@@ -527,12 +527,14 @@
             }
          }
 
+.resaltar {
+	border: 5px solid #83e4e6;
+	animation: myanim 3s infinite;
+}
+
 .green-text{
-	border: 5px solid red;
 	color: green;
 	background-color: greenyellow;
-	border: 5px solid #83e4e6;
-    animation: myanim 3s infinite;
 	font-family: 'Roboto','Courier New', Courier, monospace;
 	font-weight: bold;
 	font-size: 20px;
