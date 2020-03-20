@@ -162,7 +162,6 @@ var Application = function() {
 	let aux = 1;
 
 
-
 	function removeItemFromArr ( arr, item ) {
 	    var i = arr.indexOf( item );
 	 
@@ -175,6 +174,7 @@ var Application = function() {
 		adopPerrito1.style.backgroundColor = "#c1c1c1";
 		adopPerrito1.style.color = "black";
 		adopPerrito1.firstChild.data = "Adoptado!";
+		adopPerrito1.disabled = true;
 		let hashPresente = document.querySelector('#BPreHashPresente');
 		let hashAnterior = document.querySelector('#BPreHashAnt');
 		let hashPresenteBA = document.querySelector('#BAntHashPresente');
@@ -200,6 +200,7 @@ var Application = function() {
 		adopPerrito2.style.backgroundColor = "#c1c1c1";
 		adopPerrito2.style.color = "black";
 		adopPerrito2.firstChild.data = "Adoptado!";
+		adopPerrito2.disabled = true;
 		let hashPresente = document.querySelector('#BPreHashPresente');
 		let hashAnterior = document.querySelector('#BPreHashAnt');
 		let hashPresenteBA = document.querySelector('#BAntHashPresente');
@@ -224,6 +225,7 @@ var Application = function() {
 		adopPerrito3.style.backgroundColor = "#c1c1c1";
 		adopPerrito3.style.color = "black";
 		adopPerrito3.firstChild.data = "Adoptado!";
+		adopPerrito3.disabled = true;
 		let hashPresente = document.querySelector('#BPreHashPresente');
 		let hashAnterior = document.querySelector('#BPreHashAnt');
 		let hashPresenteBA = document.querySelector('#BAntHashPresente');
@@ -248,6 +250,7 @@ var Application = function() {
 		adopPerrito4.style.backgroundColor = "#c1c1c1";
 		adopPerrito4.style.color = "black";
 		adopPerrito4.firstChild.data = "Adoptado!";
+		adopPerrito4.disabled = true;
 		let hashPresente = document.querySelector('#BPreHashPresente');
 		let hashAnterior = document.querySelector('#BPreHashAnt');
 		let hashPresenteBA = document.querySelector('#BAntHashPresente');
@@ -319,7 +322,6 @@ var Application = function() {
 			alert("No hay bloques anteriores");
 		}
 	});
-
 
 
 	///////////////////////////////////////
