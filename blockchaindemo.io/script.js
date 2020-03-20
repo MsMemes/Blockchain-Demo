@@ -284,7 +284,9 @@ var Application = function() {
 			hashPresente.firstChild.data = hashAnterior.firstChild.data;
 			hashPresenteBA.firstChild.data = hashAnteriorBA.firstChild.data;
 			hashAnterior.firstChild.data = hashPresenteBA.firstChild.data;
-			let aux2 = aux - 1;
+			
+			
+			let aux2 = aux - 3;
 			console.log(hashsUsados[aux2]);
 			hashAnteriorBA.firstChild.data = hashsUsados[aux2];
 			aux = aux - 1;
