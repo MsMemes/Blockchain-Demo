@@ -159,7 +159,7 @@ var Application = function() {
 	let cont = 11;
 	let hashsUsados = ["000012sjh34abc", "00004ls3jd21lo"];
 	let NumBloques = 1;
-	let aux = 0;
+	let aux = 1;
 
 
 
@@ -179,12 +179,16 @@ var Application = function() {
 		let hashAnterior = document.querySelector('#BPreHashAnt');
 		let hashPresenteBA = document.querySelector('#BAntHashPresente');
 		let hashAnteriorBA = document.querySelector('#BAntHashAnt');
+		let nonce = document.querySelector('#nonceBP');
+		let nonceBA = document.querySelector('#nonceBA');
 		hashAnterior.firstChild.data = hashPresente.firstChild.data;
 		hashAnteriorBA.firstChild.data = hashPresenteBA.firstChild.data;
 		hashPresenteBA.firstChild.data = hashAnterior.firstChild.data;
 		let x = Math.floor((Math.random() * cont) + 0);
 		cont = cont - 1;
 		hashPresente.firstChild.data = hashs[x];
+		nonce.firstChild.data = parseInt(nonce.firstChild.data, 10) + 1;
+		nonceBA.firstChild.data = parseInt(nonceBA.firstChild.data, 10) + 1;
 		hashsUsados.push(hashs[x]);
 		removeItemFromArr(hashs, hashs[x]);
 		NumBloques = NumBloques + 1;
@@ -200,12 +204,16 @@ var Application = function() {
 		let hashAnterior = document.querySelector('#BPreHashAnt');
 		let hashPresenteBA = document.querySelector('#BAntHashPresente');
 		let hashAnteriorBA = document.querySelector('#BAntHashAnt');
+		let nonce = document.querySelector('#nonceBP');
+		let nonceBA = document.querySelector('#nonceBA');
 		hashAnterior.firstChild.data = hashPresente.firstChild.data;
 		hashAnteriorBA.firstChild.data = hashPresenteBA.firstChild.data;
 		hashPresenteBA.firstChild.data = hashAnterior.firstChild.data;
 		let x = Math.floor((Math.random() * cont) + 0);
 		cont = cont - 1;
 		hashPresente.firstChild.data = hashs[x];
+		nonce.firstChild.data = parseInt(nonce.firstChild.data, 10) + 1;
+		nonceBA.firstChild.data = parseInt(nonceBA.firstChild.data, 10) + 1;
 		hashsUsados.push(hashs[x]);
 		removeItemFromArr(hashs, hashs[x]);
 		NumBloques = NumBloques + 1;
@@ -220,12 +228,16 @@ var Application = function() {
 		let hashAnterior = document.querySelector('#BPreHashAnt');
 		let hashPresenteBA = document.querySelector('#BAntHashPresente');
 		let hashAnteriorBA = document.querySelector('#BAntHashAnt');
+		let nonce = document.querySelector('#nonceBP');
+		let nonceBA = document.querySelector('#nonceBA');
 		hashAnterior.firstChild.data = hashPresente.firstChild.data;
 		hashAnteriorBA.firstChild.data = hashPresenteBA.firstChild.data;
 		hashPresenteBA.firstChild.data = hashAnterior.firstChild.data;
 		let x = Math.floor((Math.random() * cont) + 0);
 		cont = cont - 1;
 		hashPresente.firstChild.data = hashs[x];
+		nonce.firstChild.data = parseInt(nonce.firstChild.data, 10) + 1;
+		nonceBA.firstChild.data = parseInt(nonceBA.firstChild.data, 10) + 1;
 		hashsUsados.push(hashs[x]);
 		removeItemFromArr(hashs, hashs[x]);
 		NumBloques = NumBloques + 1;
@@ -240,36 +252,45 @@ var Application = function() {
 		let hashAnterior = document.querySelector('#BPreHashAnt');
 		let hashPresenteBA = document.querySelector('#BAntHashPresente');
 		let hashAnteriorBA = document.querySelector('#BAntHashAnt');
+		let nonce = document.querySelector('#nonceBP');
+		let nonceBA = document.querySelector('#nonceBA');
 		hashAnterior.firstChild.data = hashPresente.firstChild.data;
 		hashAnteriorBA.firstChild.data = hashPresenteBA.firstChild.data;
 		hashPresenteBA.firstChild.data = hashAnterior.firstChild.data;
 		let x = Math.floor((Math.random() * cont) + 0);
 		cont = cont - 1;
 		hashPresente.firstChild.data = hashs[x];
+		nonce.firstChild.data = parseInt(nonce.firstChild.data, 10) + 1;
+		nonceBA.firstChild.data = parseInt(nonceBA.firstChild.data, 10) + 1;
 		hashsUsados.push(hashs[x]);
 		removeItemFromArr(hashs, hashs[x]);
 		NumBloques = NumBloques + 1;
 		aux = NumBloques;
 	});
 
-
+	// Funcion para avanzar al bloque siguiente 
 	siguiente.addEventListener('click', () => {
-		// console.log("==================")
-		// console.log(cont);
+
 		let hashPresente = document.querySelector('#BPreHashPresente');
 		let hashAnterior = document.querySelector('#BPreHashAnt');
 		let hashPresenteBA = document.querySelector('#BAntHashPresente');
 		let hashAnteriorBA = document.querySelector('#BAntHashAnt');
+		let nonce = document.querySelector('#nonceBP');
+		let nonceBA = document.querySelector('#nonceBA');
 
-		aux = index;
-
-		hashAnterior.firstChild.data = hashPresente.firstChild.data;
-		hashAnteriorBA.firstChild.data = hashPresenteBA.firstChild.data;
-		hashPresenteBA.firstChild.data = hashAnterior.firstChild.data;
-		hashPresente.firstChild.data = hashsUsados[aux];
-		// console.log(x);
-		// console.log(cont);
-		// console.log(hashs[x]);
+		if (aux < NumBloques){
+			hashAnterior.firstChild.data = hashPresente.firstChild.data;
+			hashAnteriorBA.firstChild.data = hashPresenteBA.firstChild.data;
+			hashPresenteBA.firstChild.data = hashAnterior.firstChild.data;
+			let aux2 = aux + 1;
+			hashPresente.firstChild.data = hashsUsados[aux2];
+			nonce.firstChild.data = parseInt(nonce.firstChild.data, 10) + 1;
+			nonceBA.firstChild.data = parseInt(nonceBA.firstChild.data, 10) + 1;
+			aux = aux + 1;
+		}
+		else {
+			alert("No hay bloques andelante");
+		}
 	});
 
 	anterior.addEventListener('click', () => {
@@ -279,12 +300,15 @@ var Application = function() {
 		let hashAnterior = document.querySelector('#BPreHashAnt');
 		let hashPresenteBA = document.querySelector('#BAntHashPresente');
 		let hashAnteriorBA = document.querySelector('#BAntHashAnt');
+		let nonce = document.querySelector('#nonceBP');
+		let nonceBA = document.querySelector('#nonceBA');
 
 		if (aux > 1){
 			hashPresente.firstChild.data = hashAnterior.firstChild.data;
 			hashPresenteBA.firstChild.data = hashAnteriorBA.firstChild.data;
 			hashAnterior.firstChild.data = hashPresenteBA.firstChild.data;
-			
+			nonce.firstChild.data = parseInt(nonce.firstChild.data, 10) - 1;
+			nonceBA.firstChild.data = parseInt(nonceBA.firstChild.data, 10) - 1;
 			
 			let aux2 = aux - 3;
 			console.log(hashsUsados[aux2]);
