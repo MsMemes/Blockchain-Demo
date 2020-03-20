@@ -251,8 +251,8 @@ function rolando(){
 function sergio(){
   document.getElementById("namepeer").innerHTML = "Sergio";
 }
-function sebastian(){
-  document.getElementById("namepeer").innerHTML = "Sebastián";
+function erika(){
+  document.getElementById("namepeer").innerHTML = "Erika";
 }
 function julia(){
   document.getElementById("namepeer").innerHTML = "Julia";
