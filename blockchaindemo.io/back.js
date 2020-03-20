@@ -1,12 +1,24 @@
 var a = true;
 var x = "s";
 
-function selectPeer()
-{
-  
-}
+var nPair = 0;
+
+var nBlockC = 1;
 
 function addimage() { 
+
+  if ((a == true) && (x == "s"))
+  {
+    document.getElementById("perfil3").style.display = "block";
+    x = "x";
+  }
+
+  if ((a == false) && (x == "x"))
+  {
+    document.getElementById("perfil4").style.display = "block";
+    x = "4";
+  }
+  /*
  if ((a == true) && (x == "s")){
    var img = document.createElement("img");
    img.src = "perfil.png"; 
@@ -29,6 +41,7 @@ img.setAttribute("class", class_name);
 document.getElementById("Group_1_y").appendChild(img);
 x = "4";
 }
+*/
 a = false;
 }
 
@@ -75,6 +88,49 @@ var tBlock = {
   hash: stringToHash("Welcome to hell")
 };
 
+var nBlock = {
+  name: 'Null Block',
+  data: "null",
+  prevHash: "null",
+  hash: "null"
+};
+
+function getFirstBlock(n)
+{
+  if (n == 0)
+  {
+    return gBlock;
+  }
+  else if (n == 1 && nBlockC > 1)
+  {
+    return fBlock;
+  }
+  else if (n == 2 && nBlockC > 2)
+  {
+    return sBlock;
+  }
+}
+
+function getSecondBlock(n)
+{
+  if (n == 0 && nBlockC > 1)
+  {
+    return fBlock;
+  }
+  else if (n == 1 && nBlockC > 2)
+  {
+    return sBlock;
+  }
+  else if (n == 2 && nBlockC > 3)
+  {
+    return tBlock;
+  }
+  else
+  {
+    return nBlock;
+  }
+}
+
 var pPerro = {
   name: 'Cientifico',
   adoptedBy: 'None'
@@ -95,9 +151,31 @@ var cPerro = {
   adoptedBy: 'None'
 };
 
-document.getElementById("prevBName").innerHTML = gBlock.name;
-document.getElementById("prevBPHash").innerHTML = gBlock.prevHash;
-document.getElementById("prevBHash").innerHTML = gBlock.hash;
+// Get the attributes of the carousel
+// Left card:
+// Name
+var leftBName = document.getElementById("prevBName");
+// Previous Hash
+var leftBPHash = document.getElementById("BAntHashAnt");
+// Hash
+var leftBHash = document.getElementById("BAntHashPresente");
+
+leftBName.innerHTML = gBlock.name;
+leftBPHash.innerHTML = gBlock.prevHash;
+leftBHash.innerHTML = gBlock.hash;
+
+// Right card:
+// Name
+var rightBName = document.getElementById("BName");
+// Previous Hash
+var rightBPHash = document.getElementById("BPreHashAnt");
+// Hash
+var rightBHash = document.getElementById("BPreHashPresente");
+
+rightBName.innerHTML = nBlock.name;
+rightBPHash.innerHTML = nBlock.prevHash;
+rightBHash.innerHTML = nBlock.hash;
+
 
 // Right block is hidden, to display change this attribute to "block"
 // document.getElementById("bloque-presente").style.display = "none";
@@ -119,9 +197,10 @@ function verifyDog(dName)
   else if (dName == cPerro.name)
   {
     return cPerro;
-  }
+  } 
 }
 
+/*
 function adoptDog()
 {
   let container = document.querySelectorAll('.container');
@@ -137,6 +216,24 @@ function adoptDog()
     });
   }
   
+}
+*/
+
+function updatePair()
+{
+  var aBlock;
+  var bBlock;
+
+  aBlock = getFirstBlock(nPair);
+  bBlock = getSecondBlock(nPair);
+
+  leftBName.innerHTML = aBlock.name;
+  leftBPHash.innerHTML = aBlock.prevHash;
+  leftBHash.innerHTML = bBlock.hash;
+
+  rightBName.innerHTML = bBlock.name;
+  rightBPHash.innerHTML = bBlock.prevHash;
+  rightBHash.innerHTML = bBlock.hash;  
 }
 
 function init()
@@ -159,4 +256,41 @@ function sebastian(){
 }
 function julia(){
   document.getElementById("namepeer").innerHTML = "Julia";
+}
+
+function buttonPrev()
+{
+  if (nPair > 0)
+  {
+    nPair -= 1;
+    updatePair();
+  }
+}
+
+function buttonNext()
+{
+  if (nPair < 2)
+  {
+    nPair += 1;
+    updatePair();
+  }
+}
+
+function adoptDog()
+{
+  if (nBlockC == 1)
+  {
+    nBlockC += 1;
+    updatePair();
+  }
+  else if (nBlockC == 2)
+  {
+    nBlockC += 1;
+    updatePair();
+  }
+  else if (nBlockC == 3)
+  {
+    nBlockC += 1;
+    updatePair();
+  }
 }
