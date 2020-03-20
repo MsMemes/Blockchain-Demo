@@ -155,8 +155,8 @@ var Application = function() {
 	let anterior = document.querySelector('#previous');
 
 	let listaHashs = ["000012sjh34abc"];
-	let hashs = ["00002rt3ae65", "000062mn96lsj4", "000093akd8akd5", "00009sf4skdm83", "000048jsk17abb", "00002anf36ken1", "00005sk364et3", "0000bcd234dk2k", "0000apli925abd", "0000tas829ijk3", "0000jsh4827jhn0"];
-	let cont = 11;
+	let hashs = ["00002rt3ae65", "000062mn96lsj4", "000093akd8akd5", "00009sf4skdm83", "000048jsk17abb", "00002anf36ken1", "00005sk364et3", "0000bcd234dk2k", "0000apli925abd", "0000tas829ijk3", "0000jsh4827jhn0", "0000nsj498j3ab", "0000ab4klo0012"];
+	let cont = 13;
 	let hashsUsados = ["000012sjh34abc", "00004ls3jd21lo"];
 	let NumBloques = 1;
 	let aux = 1;
