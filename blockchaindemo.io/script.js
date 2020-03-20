@@ -151,26 +151,150 @@ var Application = function() {
 	let adopPerrito3 = document.querySelector('#botonAdoptar3');
 	let adopPerrito4 = document.querySelector('#botonAdoptar4');
 
+	let siguiente = document.querySelector('#next');
+	let anterior = document.querySelector('#previous');
+
+	let listaHashs = ["000012sjh34abc"];
+	let hashs = ["00002rt3ae65", "000062mn96lsj4", "000093akd8akd5", "00009sf4skdm83", "000048jsk17abb", "00002anf36ken1", "00005sk364et3", "0000bcd234dk2k", "0000apli925abd", "0000tas829ijk3", "0000jsh4827jhn0"];
+	let cont = 11;
+	let hashsUsados = ["000012sjh34abc", "00004ls3jd21lo"];
+	let NumBloques = 1;
+	let aux = 0;
+
+
+
+	function removeItemFromArr ( arr, item ) {
+	    var i = arr.indexOf( item );
+	 
+	    if ( i !== -1 ) {
+	        arr.splice( i, 1 );
+	    }
+	}
+
 	adopPerrito1.addEventListener('click', () => {
 		adopPerrito1.style.backgroundColor = "#c1c1c1";
 		adopPerrito1.style.color = "black";
 		adopPerrito1.firstChild.data = "Adoptado!";
-	})
+		let hashPresente = document.querySelector('#BPreHashPresente');
+		let hashAnterior = document.querySelector('#BPreHashAnt');
+		let hashPresenteBA = document.querySelector('#BAntHashPresente');
+		let hashAnteriorBA = document.querySelector('#BAntHashAnt');
+		hashAnterior.firstChild.data = hashPresente.firstChild.data;
+		hashAnteriorBA.firstChild.data = hashPresenteBA.firstChild.data;
+		hashPresenteBA.firstChild.data = hashAnterior.firstChild.data;
+		let x = Math.floor((Math.random() * cont) + 0);
+		cont = cont - 1;
+		hashPresente.firstChild.data = hashs[x];
+		hashsUsados.push(hashs[x]);
+		removeItemFromArr(hashs, hashs[x]);
+		NumBloques = NumBloques + 1;
+		aux = NumBloques;
+
+	});
+
 	adopPerrito2.addEventListener('click', () => {
 		adopPerrito2.style.backgroundColor = "#c1c1c1";
 		adopPerrito2.style.color = "black";
 		adopPerrito2.firstChild.data = "Adoptado!";
-	})
+		let hashPresente = document.querySelector('#BPreHashPresente');
+		let hashAnterior = document.querySelector('#BPreHashAnt');
+		let hashPresenteBA = document.querySelector('#BAntHashPresente');
+		let hashAnteriorBA = document.querySelector('#BAntHashAnt');
+		hashAnterior.firstChild.data = hashPresente.firstChild.data;
+		hashAnteriorBA.firstChild.data = hashPresenteBA.firstChild.data;
+		hashPresenteBA.firstChild.data = hashAnterior.firstChild.data;
+		let x = Math.floor((Math.random() * cont) + 0);
+		cont = cont - 1;
+		hashPresente.firstChild.data = hashs[x];
+		hashsUsados.push(hashs[x]);
+		removeItemFromArr(hashs, hashs[x]);
+		NumBloques = NumBloques + 1;
+		aux = NumBloques;
+	});
+
 	adopPerrito3.addEventListener('click', () => {
 		adopPerrito3.style.backgroundColor = "#c1c1c1";
 		adopPerrito3.style.color = "black";
 		adopPerrito3.firstChild.data = "Adoptado!";
-	})
+		let hashPresente = document.querySelector('#BPreHashPresente');
+		let hashAnterior = document.querySelector('#BPreHashAnt');
+		let hashPresenteBA = document.querySelector('#BAntHashPresente');
+		let hashAnteriorBA = document.querySelector('#BAntHashAnt');
+		hashAnterior.firstChild.data = hashPresente.firstChild.data;
+		hashAnteriorBA.firstChild.data = hashPresenteBA.firstChild.data;
+		hashPresenteBA.firstChild.data = hashAnterior.firstChild.data;
+		let x = Math.floor((Math.random() * cont) + 0);
+		cont = cont - 1;
+		hashPresente.firstChild.data = hashs[x];
+		hashsUsados.push(hashs[x]);
+		removeItemFromArr(hashs, hashs[x]);
+		NumBloques = NumBloques + 1;
+		aux = NumBloques;
+	});
+
 	adopPerrito4.addEventListener('click', () => {
 		adopPerrito4.style.backgroundColor = "#c1c1c1";
 		adopPerrito4.style.color = "black";
 		adopPerrito4.firstChild.data = "Adoptado!";
-	})
+		let hashPresente = document.querySelector('#BPreHashPresente');
+		let hashAnterior = document.querySelector('#BPreHashAnt');
+		let hashPresenteBA = document.querySelector('#BAntHashPresente');
+		let hashAnteriorBA = document.querySelector('#BAntHashAnt');
+		hashAnterior.firstChild.data = hashPresente.firstChild.data;
+		hashAnteriorBA.firstChild.data = hashPresenteBA.firstChild.data;
+		hashPresenteBA.firstChild.data = hashAnterior.firstChild.data;
+		let x = Math.floor((Math.random() * cont) + 0);
+		cont = cont - 1;
+		hashPresente.firstChild.data = hashs[x];
+		hashsUsados.push(hashs[x]);
+		removeItemFromArr(hashs, hashs[x]);
+		NumBloques = NumBloques + 1;
+		aux = NumBloques;
+	});
+
+
+	siguiente.addEventListener('click', () => {
+		// console.log("==================")
+		// console.log(cont);
+		let hashPresente = document.querySelector('#BPreHashPresente');
+		let hashAnterior = document.querySelector('#BPreHashAnt');
+		let hashPresenteBA = document.querySelector('#BAntHashPresente');
+		let hashAnteriorBA = document.querySelector('#BAntHashAnt');
+
+		aux = index;
+
+		hashAnterior.firstChild.data = hashPresente.firstChild.data;
+		hashAnteriorBA.firstChild.data = hashPresenteBA.firstChild.data;
+		hashPresenteBA.firstChild.data = hashAnterior.firstChild.data;
+		hashPresente.firstChild.data = hashsUsados[aux];
+		// console.log(x);
+		// console.log(cont);
+		// console.log(hashs[x]);
+	});
+
+	anterior.addEventListener('click', () => {
+		
+		console.log(hashsUsados);
+		let hashPresente = document.querySelector('#BPreHashPresente');
+		let hashAnterior = document.querySelector('#BPreHashAnt');
+		let hashPresenteBA = document.querySelector('#BAntHashPresente');
+		let hashAnteriorBA = document.querySelector('#BAntHashAnt');
+
+		if (aux > 1){
+			hashPresente.firstChild.data = hashAnterior.firstChild.data;
+			hashPresenteBA.firstChild.data = hashAnteriorBA.firstChild.data;
+			hashAnterior.firstChild.data = hashPresenteBA.firstChild.data;
+			let aux2 = aux - 1;
+			console.log(hashsUsados[aux2]);
+			hashAnteriorBA.firstChild.data = hashsUsados[aux2];
+			aux = aux - 1;
+		}
+		else {
+			alert("No hay bloques anteriores");
+		}
+	});
+
+
 
 	///////////////////////////////////////
 	// AUTO REFRESH 
